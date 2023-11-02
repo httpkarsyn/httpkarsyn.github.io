@@ -1,0 +1,69 @@
+body {
+    background-color: white;
+    background-image: linear-gradient(black, #525257, #a9adad, #dbdfdf, #ffffff);
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 300px;
+   font-family: "acumin-pro", sans-serif;
+   font-weight: 900;
+   font-style: normal;
+}
+
+h2 {
+    color: #dbdfdf;
+    font-size: 300px;
+   font-family: "acumin-pro", sans-serif;
+   font-weight: 900;
+   font-style: normal;
+}
+
+h3 {
+    color: #7c7c7d;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 200px;
+}
+
+h4 {
+    color: #454547;
+    font-size: 300px;
+   font-family: "acumin-pro", sans-serif;
+   font-weight: 900;
+   font-style: normal;
+}
+
+h5 {
+    color: #343436;
+    font-family: "neue-haas-unica", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 200px;
+}
+
+h6 {
+    color: #252526;
+    font-family: "neue-haas-unica", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 200px;
+}
+
+h7 {
+    color: #020024;
+    font-family: "neue-haas-unica", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 200px;
+}
+
+h8 {
+    color: black;
+    font-size: 300px;
+   font-family: "acumin-pro", sans-serif;
+   font-weight: 900;
+   font-style: normal;
+}

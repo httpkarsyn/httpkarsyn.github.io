@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+}
+
+.poem {
+  color: #fff;
+  font-size: var(--size); /* Fix the 'font-size' property */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: none;
+}
+
+body:hover .poem {
+  display: block;
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #111;
+  color: #d8e0db;
+  font-family: "Major Mono Display", monospace;
+}
+
+.container {
+  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  padding: 70px;
+}
+
+.line {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0.5rem auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  border-right: 2px solid transparent;
+  animation: typewriter 5s steps(30) 1s 1 normal both, cursor 900ms steps(30) infinite;
+  animation-delay: 0s; /* Set a consistent delay for all lines */
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+}
+
