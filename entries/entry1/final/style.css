@@ -1,26 +1,28 @@
 body {
-  background-color: black;
+  background-image: url("flower.jpg"); 
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   overflow: hidden;
   margin: 0;
   padding: 0;
-}
 
-.content {
-  position: relative;
-}
+            font-family: "john-doe", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: whitesmoke;
+            margin: 0;
+            overflow: hidden;
+        }
 
-.poem {
-  color: #fff;
-  font-size: var(--size); /* Fix the 'font-size' property */
-  font-family: Arial, sans-serif;
-  text-align: center;
-  display: none;
-}
-
-body:hover .poem {
-  display: block;
-}
+        #typedtext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            max-width: 600px;
+        }
