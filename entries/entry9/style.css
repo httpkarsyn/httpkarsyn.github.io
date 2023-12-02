@@ -32,10 +32,10 @@
       position: relative;
     }
 
-    /* Style for the centered image */
+  
     .centered-image img {
-      max-width: 100%; /* Increase the max-width value */
-      width: 100%; /* Set a specific width to ensure responsiveness */
+      max-width: 100%; 
+      width: 100%; 
       height: auto;
       display: block;
       border-radius: 10px;
@@ -51,7 +51,7 @@
       text-decoration: none;
       transition: background 200ms, color 200ms;
       position: absolute;
-      bottom: -280;
+      bottom: -270;
       right: -50px;
    
       font-family: "regina", sans-serif;

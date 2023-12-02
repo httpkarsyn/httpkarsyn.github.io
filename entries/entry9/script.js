@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         textOne.classList.toggle("hidden-text");
         textTwo.classList.toggle("hidden-text");
 
-        // Toggle background images based on the visible text
+       
         if (textOne.classList.contains("hidden-text")) {
           body.style.backgroundImage = 'none';
         } else {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      // Attach toggleText to the read-again-text click event
+     
       let readAgainText = document.querySelector(".read-again-text");
       readAgainText.addEventListener("click", toggleText);
     });
