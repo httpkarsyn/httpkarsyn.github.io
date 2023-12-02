@@ -1,38 +1,22 @@
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function () {
+      let textOne = document.getElementById("one");
+      let textTwo = document.getElementById("two");
+      let body = document.body;
 
+      function toggleText() {
+        textOne.classList.toggle("hidden-text");
+        textTwo.classList.toggle("hidden-text");
 
-        
+        // Toggle background images based on the visible text
+        if (textOne.classList.contains("hidden-text")) {
+          body.style.backgroundImage = 'none';
+        } else {
+          body.style.backgroundImage = 'none';
+        }
+      }
 
-           
-
-            function generate(){
-
-                // Select a random item from each list
-                var selected_one = select_random(one);
-                var selected_two = select_random(two);
-                var selected_three = select_random(three);
-
-                // Take the selected (random) item from list and make it visible
-                $('.list-one').html(selected_one);
-                $('.list-two').html(selected_two);
-                $('.list-three').html(selected_three);
-
-            }
-
-            $('button').click(function(){
-                generate();
-            });
-
-            generate();
-            
-        });
-let body = document.body;
-
-function turnOnLight() {
-  body.classList.toggle("light");
-  button.classList.toggle("buttonOn");
-}
-
-let button = document.querySelector(".button");
-button.addEventListener("click", turnOnLight);
+      // Attach toggleText to the read-again-text click event
+      let readAgainText = document.querySelector(".read-again-text");
+      readAgainText.addEventListener("click", toggleText);
+    });
 

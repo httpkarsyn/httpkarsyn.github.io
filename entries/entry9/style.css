@@ -1,64 +1,67 @@
-body {
-    margin: 75px;
-    font-size: 40px;
-    background-color: black;
-}
+    body {
+      margin: 0;
+      font-size: 40px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+    }
 
-.button-container {
-    position: fixed;
-    bottom: 75px;
-    right: 75px;
-    background-color: black;
-}
+    #one,
+    #two {
+      font-family: "regina", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+      text-align: center;
+      color: whitesmoke;
+      position: absolute;
+      bottom: -40px;
+      right: 250px;
+    }
 
-#one {
-    font-family: 'monospace';
-    color: whitesmoke;
-    font-size: 25px;
-    text-align: center;
-}
+    .hidden-text {
+      display: none;
+    }
 
-#two {
-    font-family: 'monospace';
-    color: black;
-    font-size: 25px;
-    text-align: center;
-}
+    .centered-image {
+      text-align: center;
+      margin: 20px auto;
+      position: relative;
+    }
 
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+    /* Style for the centered image */
+    .centered-image img {
+      max-width: 100%; /* Increase the max-width value */
+      width: 100%; /* Set a specific width to ensure responsiveness */
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
 
-.button {
-    padding: 20px 50px;
-    border-radius: 30px;
-    background-color: white;
-    color: black;
-    font-size: 20px; 
-    text-align: center;
-    transition: all 100ms;
-    position: fixed !important;
-    bottom: 20px !important;
-    right: 75px !important;
-    
+    .read-again-text {
+      padding: 8px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+      color: whitesmoke;
+      text-decoration: none;
+      transition: background 200ms, color 200ms;
+      position: absolute;
+      bottom: -280;
+      right: -50px;
+   
+      font-family: "regina", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+      text-align: center;
+    }
 
-}
-
-.button:hover {
-    background-color: lightgrey ;
-    cursor: pointer;
-}
-
-.buttonOn {
-    background-color: darkgrey;
-    color: black;
-}
-
-.light {
-    background-color: whitesmoke;
-}
-
+    .read-again-text:hover {
+      background: whitesmoke;
+      color: black;
+    }
