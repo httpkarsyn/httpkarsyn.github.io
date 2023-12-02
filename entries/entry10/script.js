@@ -34,15 +34,17 @@ var sContents = ''
 var iRow; 
 
 function typewriter() {
-    sContents = '';
-    iRow = Math.max(0, iIndex - iScrollAt);
     var destination = document.getElementById("typedtext");
+    var output = '';
 
-    while (iRow < iIndex) {
-        sContents += aText[iRow++] + '<br />';
+ 
+    for (var i = Math.max(0, iIndex - iScrollAt); i < iIndex; i++) {
+        output += aText[i] + '<br />';
     }
 
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+    output += aText[iIndex].substring(0, iTextPos) + "_";
+
+    destination.innerHTML = output;
 
     if (iTextPos++ == aText[iIndex].length) {
         iTextPos = 0;
@@ -57,3 +59,4 @@ function typewriter() {
 }
 
 typewriter();
+
