@@ -4,15 +4,30 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    font-family: "your-font-family", sans-serif; /* replace 'your-font-family' with the actual font family */
+    font-family: "your-font-family", sans-serif; 
 }
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+  transition: color 0.3s, text-decoration 0.3s;
+  font-family: "elza-text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; 
     align-items: center;
-    background-color: #333; /* Optional: Add a background color */
     padding: 10px;
     margin: 0;
 }
@@ -23,9 +38,12 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: white; /* Optional: Set the link color */
-    padding: 10px;
+    color: whitesmoke; 
+    padding: 80px 175px;
 }
+
+
+
 
 h1 {
     color: #ffffff;
