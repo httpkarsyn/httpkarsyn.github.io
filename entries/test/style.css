@@ -1,67 +1,27 @@
-    body {
-      margin: 0;
-      font-size: 40px;
-      background-color: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      position: relative;
-    }
+body {
+  background-color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+}
 
-    #one,
-    #two {
-      font-family: "regina", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 24px;
-      text-align: center;
-      color: whitesmoke;
-      position: absolute;
-      bottom: -40px;
-      right: 250px;
-    }
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
-    .hidden-text {
-      display: none;
-    }
+h1 {
+  max-width: 75%;
+  font-size: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #540032;
+}
 
-    .centered-image {
-      text-align: center;
-      margin: 20px auto;
-      position: relative;
-    }
-
-    /* Style for the centered image */
-    .centered-image img {
-      max-width: 100%; /* Increase the max-width value */
-      width: 100%; /* Set a specific width to ensure responsiveness */
-      height: auto;
-      display: block;
-      border-radius: 10px;
-      margin: 0 auto;
-    }
-
-    .read-again-text {
-      padding: 8px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      display: inline-block;
-      color: whitesmoke;
-      text-decoration: none;
-      transition: background 200ms, color 200ms;
-      position: absolute;
-      bottom: -280;
-      right: -50px;
-   
-      font-family: "regina", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 18px;
-      text-align: center;
-    }
-
-    .read-again-text:hover {
-      background: whitesmoke;
-      color: black;
-    }
+.title {
+  background-image: url(https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_960_720.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
