@@ -1,55 +1,36 @@
 
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0; /* Reset default margin */
-  background: #111;
-  color: #d8e0db;
-  font-family: "Major Mono Display", monospace;
-}
-
-.container {
-  margin-top: 0;
-  width: 100%;
-  height: 100%;
-  padding: 70px;
-}
-
-.line {
-  white-space: nowrap;
+  background-image: url("flower.jpg"); 
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   overflow: hidden;
-  margin: 0.5rem auto;
-  font-family: "Major Mono Display", monospace;
-  font-size: 2rem;
-  font-weight: bold;
-  border-right: 2px solid transparent;
-  animation: typewriter 5s steps(30) 1s 1 normal both, cursor 900ms steps(30) infinite;
-  animation-delay: 0s; 
-}
+  margin: 0;
+  padding: 0;
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+            font-family: "john-doe", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: whitesmoke;
+            margin: 0;
+            overflow: hidden;
+        }
 
-@keyframes cursor {
-  from {
-    border-right-color: transparent;
-  }
-  to {
-    border-right-color: rgba(17, 17, 17, 0.9);
-  }
-}
-
-a:hover {
+        #typedtext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            max-width: 600px;
+        }
+        a:hover {
   color: yellow;
   text-decoration: underline;
 }
-
 a {
   text-decoration: none;
   color: whitesmoke;
@@ -60,21 +41,23 @@ a {
   font-style: normal;
 }
 
+
+
 ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around; 
-  align-items: center;
-  padding: 10px;
-  margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 10px;
+    margin: 0;
 }
 
 ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 ul li a {
-  text-decoration: none;
-  color: whitesmoke; 
-  padding: 10px 15px; /* Adjusted padding */
+    text-decoration: none;
+    color: whitesmoke; 
+    padding: 80px 165px;
 }
