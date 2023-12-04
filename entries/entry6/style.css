@@ -1,8 +1,5 @@
-{
+ body {
             box-sizing: border-box;
-        }
-
-        body {
             background-image: url('tree2.jpg');
             background-size: cover;
             background-position: center;
@@ -89,30 +86,30 @@
                 row-gap: 20px;
             }
         }
+
         ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px 0; 
-  padding: 0;
-}
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+            padding: 0;
+        }
 
-ul li {
-  display: inline-block;
-}
+        ul li {
+            display: inline-block;
+        }
 
-ul li a {
-  text-decoration: none;
-  font-family: "elza-text", sans-serif;
-  color: black;
-  padding: 10px 15px;
-  font-size: 16px;
-  transition: color 0.3s, text-decoration 0.3s;
+        ul li a {
+    text-decoration: none;
+    font-family: "elza-text", sans-serif;
+    color: whitesmoke; /* Change this to white */
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 ul li a:hover {
-  color: yellow;
-  text-decoration: underline;
-}2
-
+    color: yellow;
+    text-decoration: underline;
+}
