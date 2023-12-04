@@ -3,15 +3,13 @@
 body {
   height: 100%;
   width: 100%;
+  margin: 10; /* Reset default margin */
   background: #111;
   color: #d8e0db;
   font-family: "Major Mono Display", monospace;
 }
 
 .container {
-  margin-top: 5%;
-  width: 100%;
-  height: 100%;
   padding: 70px;
 }
 
@@ -24,7 +22,7 @@ body {
   font-weight: bold;
   border-right: 2px solid transparent;
   animation: typewriter 5s steps(30) 1s 1 normal both, cursor 900ms steps(30) infinite;
-  animation-delay: 0s; /* Set a consistent delay for all lines */
+  animation-delay: 0s; 
 }
 
 @keyframes typewriter {
@@ -45,3 +43,29 @@ body {
   }
 }
 
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: "elza-text", sans-serif;
+  color: whitesmoke;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+ul li a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
