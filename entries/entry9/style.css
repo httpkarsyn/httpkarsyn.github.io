@@ -96,7 +96,7 @@ ul li a:hover {
   text-decoration: underline;
 }
 
-/* Add some padding to the body content to prevent it from being overlapped by the fixed navigation bar */
+
 body > div {
   padding-top: 40px;
 }
