@@ -57,13 +57,11 @@ ul li a:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   h1 {
-    font-size: 30px; /* Adjusted font size for tablets */
+    font-size: 30px; 
   }
 }
-
-/* Media query for phones */
 @media only screen and (max-width: 767px) {
   h1 {
-    font-size: 24px; /* Adjusted font size for phones */
+    font-size: 24px; 
   }
 }
