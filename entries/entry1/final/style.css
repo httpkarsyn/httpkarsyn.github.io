@@ -1,71 +1,60 @@
-
 body {
-  background-image: url("flower.jpg"); 
+  background-image: url("flower.jpg");
   height: 100vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Center vertically */
   justify-content: flex-start;
   overflow: hidden;
   margin: 0;
   padding: 0;
-
-            font-family: "john-doe", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: whitesmoke;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        #typedtext {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            font-size: 20px;
-            max-width: 600px;
-        }
-        a:hover {
-  color: yellow;
-  text-decoration: underline;
-}
-a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 16px;
-  transition: color 0.3s, text-decoration 0.3s;
-  font-family: "elza-text", sans-serif;
+  font-family: "john-doe", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: whitesmoke;
+  overflow: hidden;
 }
 
+#typedtext {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  max-width: 80%;
+}
 
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  position: fixed;
+  top: 20px; 
+  width: 100%;
+  z-index: 1000;
+}
 
- ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+ul li {
+  display: inline-block;
 }
 
 ul li a {
-    text-decoration: none;
-    font-family: "elza-text", sans-serif;
-    color: whitesmoke;
-    padding: 10px 15px;
-    font-size: 16px;
-    transition: color 0.3s, text-decoration 0.3s;
+  text-decoration: none;
+  font-family: "elza-text", sans-serif;
+  color: whitesmoke;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 ul li a:hover {
-    color: yellow;
-    text-decoration: underline;
+  color: yellow;
+  text-decoration: underline;
+}
+
+body > div {
+  padding-top: 40px;
 }
