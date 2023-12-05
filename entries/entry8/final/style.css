@@ -14,7 +14,7 @@ body {
 
 h1 {
   max-width: 50%;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: #540032;
@@ -52,4 +52,18 @@ ul li a {
 ul li a:hover {
   color: yellow;
   text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 30px; /* Adjusted font size for tablets */
+  }
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px; /* Adjusted font size for phones */
+  }
 }
