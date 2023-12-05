@@ -43,21 +43,29 @@ a {
 
 
 
-ul {
+ ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    margin: 0;
-}
-
-ul li {
-    display: inline-block;
+    margin: 20;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 ul li a {
     text-decoration: none;
-    color: whitesmoke; 
-    padding: 80px 165px;
+    font-family: "elza-text", sans-serif;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+ul li a:hover {
+    color: yellow;
+    text-decoration: underline;
 }
