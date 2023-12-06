@@ -3,7 +3,7 @@
 body {
   height: 100%;
   width: 100%;
-  margin: 10; /* Reset default margin */
+  margin: 10px; /* Added unit (e.g., pixels) here */
   background: #111;
   color: #d8e0db;
   font-family: "Major Mono Display", monospace;
@@ -18,7 +18,7 @@ body {
   overflow: hidden;
   margin: 0.5rem auto;
   font-family: "Major Mono Display", monospace;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: bold;
   border-right: 2px solid transparent;
   animation: typewriter 5s steps(30) 1s 1 normal both, cursor 900ms steps(30) infinite;
@@ -48,7 +48,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: -50px; /* Adjusted top margin to move the navigation bar up */
+  margin-top: -50px; 
   padding: 0;
 }
 
@@ -68,4 +68,16 @@ ul li a {
 ul li a:hover {
   color: yellow;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
 }
